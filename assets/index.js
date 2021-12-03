@@ -1,7 +1,10 @@
 var Time = moment().format('MMMM Do YYYY, h:mm:ss a');
-var Hour = moment()._d;
+var Hour = moment().format('H:mm');
 
-$('h1').text(Time);
+setInterval(() => {
+	$('h1').text(Time);
+}, 1000);
+
 //Button to set written plans in local storage for later retrieval
 $('button').on('click', () => {
 	localStorage.setItem('Words', $('textarea.words').val());
@@ -34,6 +37,7 @@ $('textarea.words11').text(localStorage.getItem('Words11'));
 $('textarea.words12').text(localStorage.getItem('Words12'));
 
 //If coditions to decide to color past hours; could use refactoring
+
 if ($('span.1800').attr('class') < Hour) {
 	$('textarea.words').css('background-color', 'blue');
 }
@@ -72,6 +76,8 @@ if ($('span.0700').attr('class') < Hour) {
 }
 if ($('span.0600').attr('class') < Hour) {
 	$('textarea.words12').css('background-color', 'blue');
+} else {
+	$('textarea.words1').css('background-color', 'white');
 }
 //Button to clear local storage and refresh planner
 $('button.clear').on('click', () => {
