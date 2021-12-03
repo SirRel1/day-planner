@@ -1,0 +1,50 @@
+body {
+	background-color: rgb(18, 92, 230);
+}
+#day {
+	font-size: 2rem;
+	font-style: italic;
+}
+
+span {
+	font-weight: bold;
+	margin: 5px;
+	color: chartreuse;
+}
+
+h1 {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: rgb(211, 135, 37);
+}
+
+textarea {
+	outline: dotted;
+	padding: 8px;
+	margin: 3px;
+	font-style: italic;
+	font-size: 1.2rem;
+	color: chartreuse;
+}
+
+button {
+	display: table-row;
+	outline: none;
+	background-color: rgb(93, 221, 34);
+	color: blue;
+	font-weight: bold;
+	padding: auto;
+}
+
+.clear {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+/* .words {
+	background-color: blue;
+} */
