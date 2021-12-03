@@ -4,6 +4,6 @@ The user is able to save plans and set them in local storage and retrieve data e
 
 Sn: It can use refatoring for looping through hours and comparing them to current hour! Thinking through this challenge!...
 
-Deployed site:
+Deployed site: https://sirrel1.github.io/day-planner/
 
 ![Screenshot (14)](https://user-images.githubusercontent.com/89208706/144548099-0cb093a4-1e51-409d-9e9a-e481087deab2.png)
